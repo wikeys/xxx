@@ -41,7 +41,7 @@ class ssh_login:
 				time.sleep(2)
 		res = self.chan.recv(999999)
 		print(res.decode())
-		self.ssh.close()
+		self.chan.close()
 
 if __name__ == '__main__':
 	try:
